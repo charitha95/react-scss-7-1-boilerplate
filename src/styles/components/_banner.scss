@@ -1,0 +1,74 @@
+/**
+* @desc         banner benith the header.
+* @requires     variables
+*/
+
+// needs to be moved into somewhere.
+.banner {
+  height: 370px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+
+  .banner-container {
+    height: calc(100% - 52px);
+    position: relative;
+    z-index: 1;
+    color: $text-white-color;
+
+    .content-wrapper {
+      width: 100%;
+      padding-top: 100px;
+    }
+    section {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 20px;
+      > * {
+        margin-bottom: 30px;
+      }
+    }
+    .puzzle-image {
+      position: absolute;
+      right: 0px;
+      top: 0;
+      height: 370px;
+      opacity: 0.3;
+      z-index: 1;
+    }
+  }
+
+  @include respond-to("large") {
+    .banner-container {
+      display: flex;
+      align-items: center;
+      .content-wrapper {
+        &.with-padding {
+          $custom-padding: 25%;
+          padding-left: $custom-padding;
+          padding-right: $custom-padding;
+        }
+      }
+      section {
+        margin-top: 0px;
+        width: 55%;
+        padding-top: 90px;
+        h1 {
+          font-size: $font-s-xxxlarge;
+        }
+        > * {
+          margin-bottom: 15px;
+        }
+      }
+      .puzzle-image {
+        top: -75px;
+        right: 30px;
+        opacity: 1;
+        height: 550px;
+      }
+      .search-block {
+        position: relative;
+      }
+    }
+  }
+}

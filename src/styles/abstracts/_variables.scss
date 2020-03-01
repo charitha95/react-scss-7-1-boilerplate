@@ -1,0 +1,127 @@
+/**
+* @desc         set up variables.
+* @requires     none
+*/
+
+// [color - variables]
+// branding
+$primary-dark-color: #1565c0;
+$primary-light-color: #2699fb;
+$action-dark-color: #008a00;
+$action-light-color: #02a257;
+$info-light-color: #ffc048;
+$info-dark-color: #ffc048;
+$danger-light-color: #c23934;
+$danger-dark-color: #e01e5a;
+
+// transparent
+$transparent-color: transparent;
+
+// whites
+$white-color-1: #ffffff;
+
+// grays
+$gray-color-1: #f4f6f8;
+$gray-color-2: #d2dae2;
+$gray-color-3: #8c96a9;
+$gray-color-4: #485460;
+$gray-color-5: #333333;
+$gray-color-6: #1d2b33;
+
+// element colors
+// footer
+$footer-color: $primary-dark-color;
+// inputs
+$input-backround-color: $white-color-1;
+$input-border-color: $gray-color-2;
+$input-placeholder-color: $gray-color-2;
+// body
+$body-background: $gray-color-1;
+// badge - pill
+$badge-pill-bg: rgba($primary-dark-color, .1);
+// footer
+$footer-bg: $primary-dark-color;
+// [text - variables]
+// text colors
+$text-primary-color: $primary-dark-color;
+$text-default-color: $gray-color-4;
+$text-tone-light-color: $gray-color-2;
+$text-toned-color: $gray-color-3;
+$text-title-color: $gray-color-4;
+$text-hover-color: $text-primary-color;
+$text-white-color: $white-color-1;
+
+// font family
+$font-family-default: 'circular-regular', sans-serif;
+$font-family-default-m: 'circular-medium', sans-serif;
+$font-family-code: Consolas, Monaco, "Lucida Console", monospace;
+
+// font weights
+$font-w-light: 300;
+$font-w-regular: 400;
+$font-w-medium: 500;
+$font-w-semi-bold: 600;
+
+// font size
+$font-s-xsmall: 10px;
+$font-s-small: 12px;
+$font-s-regular: 14px;
+$font-s-medium: 16px; // -> base size
+$font-s-big: 18px;
+$font-s-large: 20px; // ->  x size
+$font-s-xlarge: 25px; // -> xx size
+$font-s-xxlarge: 32px;
+$font-s-xxxlarge: 38px;
+
+// inline hights
+$base-line-height: normal;
+
+// [border - variables]
+// border colors
+$border-default-color: $gray-color-2;
+$border-primary-color: $primary-dark-color;
+$border-white-color: $white-color-1;
+
+// border radius
+$border-radius: 2px;
+$border-radius-1: 2px;
+$border-radius-2: 4px;
+$border-radius-3: 6px;
+$border-radius-4: 8px;
+
+// [action - variables]
+// hover
+$primary-hover-color-1: rgba($primary-dark-color, 0.2);
+$primary-hover-color-2: rgba($primary-dark-color, 0.4);
+$primary-hover-color-3: rgba($primary-dark-color, 0.6);
+
+// [breakpoint - variables]
+// breakpoints
+$breakpoints: (
+  "small": (
+    min-width: 576px
+  ),
+  "medium": (
+    min-width: 768px
+  ),
+  "large": (
+    min-width: 992px
+  ),
+  "extra": (
+    min-width: 1200px
+  )
+);
+
+// [margins and paddings - variables]
+// paddings
+$button-default-padding: 6px 20px;
+$navlink-padding-x: 0px;
+$card-padding-y: 1.25rem;
+$badge-p-padding-y: 8px;
+$badge-p-padding-x: 15px;
+$breadcrumb-bottom-margin: 12px;
+
+// [shadow - variables]
+// shadows
+$box-shadow-light: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.06);
+$box-shadow-medium: 0 8px 11px rgba(0, 0, 0, 0.1), 0 9px 12px rgba(0, 0, 0, 0.2);

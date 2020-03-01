@@ -1,0 +1,14 @@
+.input-ue {
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+  img {
+    position: absolute;
+    width: 20px;
+    left: 15px;
+  }
+  input {
+    border-radius: $border-radius-1;
+  }
+}

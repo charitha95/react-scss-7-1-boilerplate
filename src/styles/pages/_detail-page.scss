@@ -1,0 +1,228 @@
+/**
+* @desc         detail page styles.
+* @requires     variables.scss
+*/
+
+.detail-page {
+  .header-container {
+    background: $white-color-1;
+    padding: 25px 0;
+    .bread-crub-wrapper {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 540px;
+      @include respond-to("medium") {
+        max-width: 720px;
+      }
+      @include respond-to("large") {
+        max-width: 960px;
+      }
+      @include respond-to("extra") {
+        max-width: 1140px;
+      }
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+
+  .detail-container {
+    margin-top: 50px;
+    .row {
+      flex-direction: column-reverse;
+      @include respond-to("large") {
+        flex-direction: row;
+      }
+    }
+    .detail-overview {
+      .header {
+        &.row {
+          .card {
+            width: 100%;
+            .card-body {
+              display: flex;
+              flex-direction: column;
+              .top-description-wrapper {
+                width: 100%;
+                text-align: center;
+                margin-left: 0;
+                @include respond-to("large") {
+                  width: calc(100% - 100px);
+                  margin-left: 15px;
+                  text-align: left;
+                }
+              }
+
+              @include respond-to("large") {
+                flex-direction: row;
+              }
+            }
+          }
+        }
+        .cover {
+          @extend %cover-img;
+        }
+      }
+      .content {
+        .card {
+          width: 100%;
+          overflow: hidden;
+          ul {
+            li {
+              margin-bottom: 15px;
+              &:last-child {
+                margin-bottom: 50px;
+              }
+            }
+          }
+          p {
+            &.not-found {
+              margin: 0;
+              text-align: center;
+            }
+          }
+          img {
+            max-width: 100%;
+          }
+          .image-refference {
+            margin-top: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+      .row {
+        margin: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .info {
+    > * {
+      margin-bottom: 30px;
+    }
+    .card {
+      .card-header {
+        border-bottom: 1px solid $border-default-color;
+        .card-title {
+          margin: 0;
+          text-align: center;
+        }
+      }
+      .card-body {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        > * {
+          margin: 0 45px 15px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        .info-badge {
+          padding: 8px 15px;
+          background: $badge-pill-bg;
+          color: $text-primary-color;
+          font-size: $font-s-big;
+          .type {
+            font-size: $font-s-regular;
+          }
+        }
+        p {
+          text-align: center;
+        }
+        .free-for-use {
+          @extend %note;
+          word-break: break-word;
+          .note {
+            font-family: $font-family-default-m;
+          }
+        }
+        button {
+          width: 50%;
+        }
+        .activated {
+          background: $action-dark-color;
+          color: $white-color-1;
+          padding: 6px 20px;
+          border-radius: 50px;
+          width: 50%;
+          line-height: 1.5;
+          text-align: center;
+          font-size: 1rem;
+        }
+      }
+    }
+    .info-record {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      strong {
+        font-weight: 500;
+      }
+      * {
+        margin: 0;
+      }
+      div {
+        max-width: 70%;
+        text-align: right;
+      }
+      .active {
+      }
+    }
+  }
+
+  .secondary-content {
+    background: $white-color-1;
+    padding: 40px 0;
+  }
+}
+
+.activation-popup {
+  flex-direction: column;
+
+  .invalid-activation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    * {
+      margin: 0;
+    }
+    figure {
+      margin-bottom: 10px;
+    }
+    p,
+    h5 {
+      color: $danger-dark-color;
+    }
+    .sign-in {
+      margin-top: 10px;
+      span {
+        color: $text-primary-color;
+        cursor: pointer;
+        @extend %ease;
+        &:hover {
+          color: $primary-light-color;
+        }
+      }
+    }
+  }
+  .consent {
+    @extend %note;
+    p {
+      margin: 0;
+    }
+    .checkbox {
+      margin-top: 10px;
+    }
+  }
+  .primary-span {
+    color: $text-primary-color;
+  }
+}

@@ -1,0 +1,48 @@
+/**
+* @desc         adds default text styles
+* @requires     variables.scss
+*/
+body {
+  line-height: $base-line-height;
+  color: $text-default-color;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: $font-family-default;
+}
+
+// headings and paragraph
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-family: $font-family-default-m;
+}
+
+h1 {
+  font-size: $font-s-xlarge;
+}
+h2 {
+  font-size: $font-s-large;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-size: $font-s-medium;
+}
+
+p {
+  font-size: $font-s-medium;
+}
+
+pre,
+code {
+  font-family: $font-family-code;
+}

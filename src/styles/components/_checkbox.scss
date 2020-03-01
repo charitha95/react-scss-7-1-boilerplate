@@ -1,0 +1,64 @@
+.checkbox {
+  input[type="checkbox"] {
+    display: none !important;
+  }
+  label {
+    position: relative;
+    display: inline-block;
+    min-height: 12px;
+    padding-left: 30px;
+    line-height: 1;
+    vertical-align: middle;
+    cursor: pointer;
+    color: $primary-dark-color;
+    line-height: 28px;
+    user-select: none;
+    margin: 0;
+    @extend %ease;
+    a {
+      color: $primary-light-color;
+      @extend %ease;
+    }
+    &::before,
+    &::after {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      content: "";
+    }
+    &::before {
+      background: $gray-color-2;
+      border: 1px solid $gray-color-2;
+    }
+    &::after {
+      position: absolute;
+      top: 0px;
+      left: 2px;
+      color: $white-color-1;
+      visibility: hidden;
+      width: 10px;
+      height: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+    }
+  }
+  input:checked ~ label::after {
+    visibility: visible;
+  }
+  input:checked ~ label::before {
+    background-color: $primary-dark-color;
+    border-color: $primary-dark-color;
+  }
+  label::before {
+    border-radius: 3px;
+  }
+  label::after {
+    content: "✓";
+  }
+  background-position: 49% 49%;
+  background-size: 20px;
+}

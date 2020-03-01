@@ -1,0 +1,55 @@
+/**
+* @desc         overrides default bootstrap styles.
+* @requires     variables.scss, functions.scss
+*/
+
+// colors
+$theme-colors: (
+  "primary": $primary-dark-color,
+  "danger": $danger-dark-color,
+  "success": $action-dark-color,
+  "dark": $gray-color-3
+);
+
+// body
+$body-bg: $body-background;
+// fonts
+$font-family-sans-serif: $font-family-default;
+$navbar-brand-font-size: calculate-rem($font-s-medium);
+
+// border
+$border-radius: $border-radius-2;
+
+// input
+$input-border-color: $input-border-color;
+$input-placeholder-color: $input-placeholder-color;
+
+// nav-links
+$nav-link-padding-x: $navlink-padding-x;
+
+// cards
+$card-border-color: $transparent-color;
+$card-spacer-y: $card-padding-y;
+$card-cap-bg: $transparent-color;
+$card-border-width: 0px;
+
+// badges
+$badge-font-weight: $font-w-medium;
+$badge-padding-y: $badge-p-padding-y;
+$badge-pill-padding-x: $badge-p-padding-x;
+
+// list group
+$list-group-bg: $transparent-color;
+
+// breadcrub
+$breadcrumb-bg: $white-color-1;
+$breadcrumb-margin-bottom: $breadcrumb-bottom-margin;
+$breadcrumb-padding-y : 0;
+$breadcrumb-padding-x: 0;
+
+// modal
+$modal-content-border-radius: $border-radius;
+$modal-header-border-color: transparent;
+$modal-header-padding-y: 25px;
+$modal-header-padding-x: 25px;
+// $modal-inner-padding: 25px;

@@ -1,0 +1,85 @@
+/**
+* @desc         side panel styles.
+* @requires     variables.scss
+*/
+
+.side-panel-ue {
+  display: flex;
+  margin-bottom: 10px;
+  @include respond-to("large") {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .accordion {
+    width: 100%;
+    padding: 10px;
+    background: $white-color-1;
+    margin-right: 10px;
+    text-align: center;
+    &:last-child {
+      display: none;
+    }
+    @include respond-to("large") {
+      &:last-child {
+        display: block;
+      }
+      width: auto;
+      margin-top: 10px;
+      text-align: left;
+      background: transparent;
+      margin-right: 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 15px;
+      }
+    }
+    
+    .nav {
+       .nav-link {
+         color: $text-default-color;
+         &.active {
+           color: $text-primary-color;
+           font-weight: $font-w-medium;
+         }
+       }
+    }
+
+    > button {
+      width: 100%;
+      padding: 0;
+      color: inherit;
+      * {
+        margin: 0;
+      }
+      @include respond-to("large") {
+        width: auto;
+      }
+    }
+
+    > :nth-child(2) {
+      margin-top: 10px;
+    }
+  }
+
+  .dropdown {
+    display: block;
+    button {
+      background: rgba($primary-dark-color, 0.2);
+      border-radius: 0;
+      padding: 10px;
+      &:after {
+        display: none;
+      }
+      figure {
+        margin: 0;
+      }
+    }
+    @include respond-to("large") {
+      display: none;
+    }
+  }
+ 
+}

@@ -1,0 +1,76 @@
+.callback-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+  .info-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 50vh;
+    text-align: center;
+    > * {
+      margin: 10px;
+    }
+    h3 {
+      font-size: $font-s-xxlarge;
+    }
+    p {
+      font-size: $font-s-medium;
+    }
+  }
+
+  .image-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    figure {
+      margin: 0;
+      max-width: 600px;
+      position: fixed;
+      bottom: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .clouds-container {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    img {
+      width: 200px;
+      height: auto;
+      position: absolute;
+      &:nth-child(1) {
+        left: 135px;
+        top: 20px;
+        width: 300px;
+
+      }
+      &:nth-child(2) {
+        left: 250px;
+        top: -300px;
+        width: 150px;
+      }
+      &:nth-child(3) {
+        right: 200px;
+        top: 300px;
+        width: 200px;
+      }
+      &:nth-child(4) {
+        right: -50px;
+        top: 100px;
+        width: 350px;
+      }
+      &:nth-child(5) {
+        right: 200px;
+        top: -200px;
+        width: 100px;
+      }
+    }
+  }
+}

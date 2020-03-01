@@ -1,0 +1,50 @@
+.home-page {
+  margin-top: 20px;
+  position: relative;
+
+  .summary {
+    width: 100%;
+    margin: 15px;
+    border-radius: $border-radius-2;
+    .result-sum {
+      color: $primary-dark-color;
+    }
+
+    @include respond-to("large") {
+      margin: 10px;
+    }
+  }
+
+  .main-content {
+    margin-top: 55px;
+
+    .home-feed-card {
+      min-height: 296.33px;
+    }
+  }
+
+  .secondary-content {
+    margin-top: 55px;
+    background: $white-color-1;
+    padding: 40px 0;
+  }
+
+  .paginaiton-block {
+    margin-top: 15px;
+  }
+
+  .results-not-found {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    figure {
+      max-width: 500px;
+
+      img {
+        width: 100%;
+        margin-top: 75px;
+      }
+    }
+  }
+}

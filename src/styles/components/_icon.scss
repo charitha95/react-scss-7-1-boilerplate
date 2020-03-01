@@ -1,0 +1,24 @@
+/**
+* @desc         icon styles.
+* @requires     none
+*/
+
+.icon-ue {
+  margin: 0;
+  margin-left: 10px;
+  &.xxs {
+    width: 10px;
+  }
+  &.xs {
+    width: 15px;
+  }
+  &.sm {
+    width: 25px;
+  }
+  &.md {
+    width: 50px;
+  }
+  img {
+    width: 100%;
+  }
+}

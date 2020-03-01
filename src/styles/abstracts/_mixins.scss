@@ -1,0 +1,26 @@
+
+/**
+* @desc         mixins of the app.
+* @requires     variables.scss
+*/
+
+
+// responsive breakpoint manager
+@mixin respond-to($breakpoint) {
+    $raw-query: map-get($breakpoints, $breakpoint);
+  
+    @if $raw-query {
+      $query: if(
+        type-of($raw-query) == 'string',
+        unquote($raw-query),
+        inspect($raw-query)
+      );
+  
+      @media #{$query} {
+        @content;
+      }
+    } @else {
+      @error 'No value found for `#{$breakpoint}`. '
+           + 'Make sure you have passed a valid value as defined in `$breakpoints` map in variables.scss.';
+    }
+  }
