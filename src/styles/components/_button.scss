@@ -9,9 +9,6 @@
   width: max-content;
   padding: $button-default-padding;
   border-radius: $border-radius-1;
-  &:active {
-    background: red;
-  }
   &.white {
     color: $primary-dark-color;
     background: $white-color-1;
